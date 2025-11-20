@@ -16,8 +16,7 @@
   <div class="container bg-white shadow-lg rounded-lg">
     <header class="text-center mb-8">
       <h1 class="text-3xl font-bold text-gray-800">Capacitacion SAP PTM - Importación y Costeo</h1>
-      <p class="text-xl text-blue-600 font-semibold">P2P (Procure-to-Pay)</p>
-    </header>
+          </header>
     <section class="mb-8">
         <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
         <div class="flex flex-col lg:flex-row gap-6">
@@ -61,15 +60,8 @@
                 Iniciar en 00:23:29
             </p>
         </button>
-    
-        <button onclick="goToTime(1571)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <p class="font-semibold text-sm text-gray-800">La Solicitud de Pedido (Solpe) en el Proceso de Compras</p>
-            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                Iniciar en 00:26:11
-            </p>
-        </button>
-    
+   
+  
         <button onclick="goToTime(1727)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
             <p class="font-semibold text-sm text-gray-800">Recomendación: Crear con Referencia y Usar Modelos</p>
             <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
@@ -86,9 +78,9 @@
       <h2 class="section-title text-gray-700">Resumen Temático</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar en el proceso de compras de importación en SAP S/4HANA, enfocándose en la valoración de materiales mediante clases de valoración, el costeo planificado en el pedido de compra y el flujo de aprovisionamiento.</p></div>
-        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Definición de la Clase de Valoración para diferenciar costos del mismo material (valoración separada).</li><li>Análisis del costo y movimientos del material (Kardex) usando la transacción CKM3N.</li><li>Creación de una Solicitud de Pedido (Solpe) como inicio del requerimiento de compra.</li><li>Creación del Pedido de Compra, aplicando un esquema de precios de importación para añadir costos adicionales (flete, seguro, etc.).</li><li>Ajuste del valor del inventario basado en las diferencias entre el costo planificado en el pedido y el costo real de la factura del proveedor.</li></ul></div>
-        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">CKM3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME51N</span></div></div>
-        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>El costeo del producto se planifica desde el Pedido de Compra, lo que permite tener una visión del costo total antes de la llegada de la mercancía.</li><li>Las 'Clases de Valoración' permiten tener múltiples costos para un mismo código de material en inventario, lo que se conoce como valoración separada.</li><li>El sistema gestiona la valoración del inventario en dos monedas de forma paralela: la moneda local y la moneda del grupo (dólar).</li><li>Las diferencias entre el costo planificado en el pedido y el costo real de la factura se ajustan automáticamente en el valor del inventario o se registran como diferencia de precio.</li><li>La Solicitud de Pedido (Solpe) es el documento que formaliza una necesidad de compra antes de crear el Pedido de Compra.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Definición de la Clase de Valoración para diferenciar costos del mismo material (valoración separada).</li><li>Análisis del costo y movimientos del material (Kardex) usando la transacción CKM3N.</li><li>Creación del Pedido de Compra, aplicando un esquema de precios de importación para añadir costos adicionales (flete, seguro, etc.).</li><li>Ajuste del valor del inventario basado en las diferencias entre el costo planificado en el pedido y el costo real de la factura del proveedor.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">CKM3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME21N</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>El costeo del producto se planifica desde el Pedido de Compra, lo que permite tener una visión del costo total antes de la llegada de la mercancía.</li><li>Las 'Clases de Valoración' permiten tener múltiples costos para un mismo código de material en inventario, lo que se conoce como valoración separada.</li><li>El sistema gestiona la valoración del inventario en dos monedas de forma paralela: la moneda local y la moneda del grupo (dólar).</li><li>Las diferencias entre el costo planificado en el pedido y el costo real de la factura se ajustan automáticamente en el valor del inventario o se registran como diferencia de precio.</li></ul></div>
         <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Utilizar la funcionalidad de 'crear con referencia' para generar nuevos documentos (pedidos, materiales) a partir de modelos existentes, asegurando la consistencia de los datos y agilizando el proceso.</li><li>Aprovechar el 'Resumen de documento activo' para buscar pedidos de compra anteriores y replicarlos rápidamente arrastrándolos al 'carrito de compra' en la pantalla de creación de pedidos.</li></ul></div>
       </div>
     </section>
@@ -129,15 +121,8 @@
                             00:23:29 - 00:25:58
                         </button>
                     </td>
-                </tr><tr class="hover:bg-gray-100">
-                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">La Solicitud de Pedido (Solpe) en el Proceso de Compras</td>
-                    <td class="p-3 text-gray-800 border border-gray-300">Introducción al concepto de Solicitud de Pedido (transacción ME51N) como el documento inicial del flujo de aprovisionamiento, que precede a la cotización y al pedido de compra.</td>
-                    <td class="p-3 text-gray-800 border border-gray-300">
-                        <button onclick="goToTime(1571)" class="text-blue-600 hover:underline">
-                            00:26:11 - 00:28:14
-                        </button>
-                    </td>
-                </tr><tr class="hover:bg-gray-100">
+                </tr>
+                <tr class="hover:bg-gray-100">
                     <td class="p-3 text-gray-800 border border-gray-300 font-medium">Recomendación: Crear con Referencia y Usar Modelos</td>
                     <td class="p-3 text-gray-800 border border-gray-300">Buenas prácticas para agilizar la creación de documentos. Se muestra cómo copiar un pedido de compra existente usando la función de 'Resumen de documento activo' para crear uno nuevo con datos pre-cargados.</td>
                     <td class="p-3 text-gray-800 border border-gray-300">
